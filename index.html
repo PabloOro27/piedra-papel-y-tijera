@@ -16,6 +16,7 @@
     <div class="juego">
         <div class="tarjeta-juego">
             <h1 class="titulo">Juego piedra, papel, tijeras</h1>
+            
             <div class="batalla">
                 <div class="usuario">
                     <figure class="select-user">
@@ -40,17 +41,19 @@
             </div>
 
             <div class="seleccion">
-                <div class="mano-seleccion">
-                    <figure class="piedra">
-                        <img src="" alt="piedra">
-                    </figure>
-                    <figure class="papel">
-                        <img src="" alt="papel">
-                    </figure>
-                    <figure class="tijera">
-                        <img src="" alt="tijera">
-                    </figure>
-                </div>
+                <ul class="mano-seleccion">
+                    <li class="piedra">
+                        <input type="radio">
+                        <img src="./Assets/Piedra.png" alt="piedra">
+                    </li>
+                    <li class="papel">
+                        <img src="./Assets/Papel.png" alt="papel">
+                    </li>
+                    <li class="tijera">
+                        <img src="./Assets/Tijeras.png" alt="tijera">
+                    </li>
+                </ul>
+
                 <p>Elige una opcion!</p>
             </div>
             <button class="primary-button">Iniciar Juego</button>

@@ -59,6 +59,7 @@ body{
     border-radius: 20px;
     background-color: var(--blue-background);
     height: 210px;
+    margin-bottom: 16px;
 }
 .usuario,
 .cpu{
@@ -80,4 +81,55 @@ body{
     color: var(--white);
     font-size: var(--lg);
     font-weight: bold;
+}
+
+.seleccion{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border: 3px solid var(--white);
+    border-radius: 20px;
+    background-color: var(--blue-background);
+    height: 210px;
+    width: 325px;
+}
+.mano-seleccion{
+    display: flex;
+}
+.piedra img, 
+.papel img,
+.tijera img{
+    width: 80px;
+}
+.piedra,
+.papel,
+.tijera{
+    margin: 20px 0 0;
+}
+.mano-seleccion{
+    list-style: none;
+    padding: 0;
+}
+.mano-seleccion li img:hover{
+    width: 100px;
+}
+.mano-seleccion li img:checked{
+    width: 110px;
+}
+.seleccion p{
+    font-weight: bold;
+    color: var(--white);
+    font-size: var(--lg);
+}
+
+.primary-button{
+    margin: 20px 0 18px;
+    font-size: var(--md);
+    background-color: var(--blue-background);
+    width: 150px;
+    height: 42px;
+    color: var(--white);
+    border: 0;
+    border-radius: 12px;
 }
