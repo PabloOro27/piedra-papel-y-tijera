@@ -96,33 +96,29 @@ body{
 }
 .mano-seleccion{
     display: flex;
+    padding: 0;
+    margin-top: 18px;
 }
 .piedra img, 
 .papel img,
 .tijera img{
     width: 80px;
 }
-.piedra,
-.papel,
-.tijera{
-    margin: 20px 0 0;
-}
-.mano-seleccion{
-    list-style: none;
-    padding: 0;
-}
-.mano-seleccion li img:hover{
+.mano-seleccion label img:hover{
     width: 100px;
-}
-.mano-seleccion li img:checked{
-    width: 110px;
 }
 .seleccion p{
     font-weight: bold;
     color: var(--white);
     font-size: var(--lg);
 }
+input {
+    display: none;
+}
 
+input:checked + label img {
+    width: 120px;
+}
 .primary-button{
     margin: 20px 0 18px;
     font-size: var(--md);
@@ -133,3 +129,4 @@ body{
     border: 0;
     border-radius: 12px;
 }
+
