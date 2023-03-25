@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera</title>
+    <!--link de estilos-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="juego">
+        <div class="tarjeta-juego">
+            <h1 class="titulo">Juego piedra, papel, tijeras</h1>
+            
+            <div class="batalla">
+                <div class="usuario">
+                    <figure class="select-user">
+                        <img src="./Assets/Papel.png" alt="mano">
+                    </figure>
+                    <p>Usuario</p>
+                    <span class="victorias" id="win">0</span>
+                </div>
+
+                <div class="vs">
+                    <img src="./Assets/vs_icon.png" alt="">
+                </div>
+
+                <div class="cpu">
+                    <figure class="select-cpu">
+                        <img src="./Assets/Papel.png" alt="mano">
+                    </figure>
+                    <p>CPU</p>
+                    <span class="derrotas" id="lose">0</span>
+                </div>
+
+            </div>
+
+            <div class="seleccion">
+                <div class="mano-seleccion">
+                    <input type="radio" id="manoPiedra" name="mano">
+                    <label class="piedra" for = "manoPiedra">
+                        <img src="./Assets/Piedra.png" alt="piedra">
+                    </label>
+                    <input type="radio" id="manoPapel" name="mano">
+                    <label class="papel" for = "manoPapel">
+                        <img src="./Assets/Papel.png" alt="papel">
+                    </label>
+                    <input type="radio" id="manoTijera" name="mano">
+                    <label class="tijera" for = "manoTijera">
+                        <img src="./Assets/Tijeras.png" alt="tijera">
+                    </label>
+                </div>
+
+                <p>Elige una opcion!</p>
+            </div>
+            <button class="primary-button">Iniciar Juego</button>
+        </div>
+    </div>
+    <!--enlace de js -->
+    <script src="game.js"></script>
+</body>
+</html>
